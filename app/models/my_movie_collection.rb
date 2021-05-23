@@ -1,0 +1,2 @@
+class MyMovieCollection < ApplicationRecord
+end
