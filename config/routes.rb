@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :my_movie_collections
   get 'home/index'
   get 'home/about'
   get 'home/watchlist'
