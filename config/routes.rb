@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :watchlists
+  resources :movies
   get 'home/index'
   get 'home/about'
   get 'home/watchlist'

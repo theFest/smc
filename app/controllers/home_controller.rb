@@ -5,9 +5,6 @@ class HomeController < ApplicationController
   def about
   end
 
-  def watchlist
-  end
-
   def top10
   end
 

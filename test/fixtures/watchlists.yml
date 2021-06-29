@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  movie: MyString
+  added: 2021-06-28 20:19:37
+
+two:
+  movie: MyString
+  added: 2021-06-28 20:19:37

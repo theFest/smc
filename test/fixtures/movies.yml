@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  year: 2021-06-28
+  director: MyString
+  lenght: MyString
+  rating: 9.99
+  description: MyText
+  watched: false
+
+two:
+  title: MyString
+  year: 2021-06-28
+  director: MyString
+  lenght: MyString
+  rating: 9.99
+  description: MyText
+  watched: false
