@@ -1,20 +1,17 @@
 # SMC README 
+* ##############################
+bundle exec rake webpacker:install
+rake db:migrate
+
 
 current smc workflow 
 * ## > document/readmap
-* ## CRUD
-* ## Devise
-* ## Associations
-* ## Rake 
-* ## Migrate
-* ## change db to postgres
-* ## dockerize
-* ## push to H
-* ### define...
-
-
-
-
+* ## CRUD { movies, watchlist }
+* ## Devise { implementing... }
+* ## Change db to postgres { current:sqlite }
+* ## Dockerize { docker-compose }
+* ## Build|Push to Heroku
+* # Rake, Associations...
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
