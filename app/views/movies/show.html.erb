@@ -1,6 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4"><%= @movie.title %></h1>
+    <p class="lead"><p>
   <strong>Title:</strong>
   <%= @movie.title %>
 </p>
@@ -35,5 +38,7 @@
   <%= @movie.watched %>
 </p>
 
-<%= link_to 'Edit', edit_movie_path(@movie) %> |
-<%= link_to 'Back', movies_path %>
+<button type="button" class="btn btn-primary"><%= link_to 'Edit', edit_movie_path(@movie) %></button>
+<button type="button" class="btn btn-warning"><%= link_to 'Back', movies_path %></button></p>
+  </div>
+</div>

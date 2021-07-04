@@ -15,34 +15,40 @@
     <%= form.number_field :user_id, id: :movie_user_id, class:"form-control", value: current_user.id, type: :hidden %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title,
+      class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :year %>
-    <%= form.date_select :year %>
+    <%= form.date_select :year,
+      class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :director %>
-    <%= form.text_field :director %>
+    <%= form.text_field :director,
+      class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :lenght %>
-    <%= form.text_field :lenght %>
+    <%= form.text_field :lenght,
+      class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :rating %>
-    <%= form.text_field :rating %>
+    <%= form.text_field :rating,
+      class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :description %>
-    <%= form.text_area :description %>
+    <%= form.text_area :description,
+      class:"form-control" %>
   </div>
 
   <div class="field">

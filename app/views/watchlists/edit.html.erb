@@ -2,5 +2,5 @@
 
 <%= render 'form', watchlist: @watchlist %>
 
-<%= link_to 'Show', @watchlist %> |
-<%= link_to 'Back', watchlists_path %>
+<td><button type="button" class="btn btn-info"><%= link_to 'Show', @watchlist %></button></td>
+<td><button type="button" class="btn btn-warning"><%= link_to 'Back', watchlists_path %></button></td>

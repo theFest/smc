@@ -1,6 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<div class="jumbotron">
+  <h1 class="display-4"><%= @watchlist.movie %></h1>
+  <p class="lead"><p>
   <strong>Movie:</strong>
   <%= @watchlist.movie %>
 </p>
@@ -10,5 +12,11 @@
   <%= @watchlist.added %>
 </p>
 
-<%= link_to 'Edit', edit_watchlist_path(@watchlist) %> |
-<%= link_to 'Back', watchlists_path %>
+<button type="button" class="btn btn-primary"><%= link_to 'Edit', edit_watchlist_path(@watchlist) %></button>
+<button type="button" class="btn btn-warning"><%= link_to 'Back', watchlists_path %></button></p>
+  <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </p>
+</div>

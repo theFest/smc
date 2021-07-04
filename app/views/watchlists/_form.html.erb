@@ -11,17 +11,19 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :movie %>
-    <%= form.text_field :movie %>
+    <%= form.text_field :movie,
+      class:"form-control" %>
   </div>
 
-  <div class="field">
+<div class="text">
     <%= form.label :added %>
-    <%= form.datetime_select :added %>
-  </div>
+    <%= form.datetime_select :added,
+      class:"form-control" %>
+        <div class="actions">
+        </br>
+    <td><button class="btn btn-white"><%= form.submit %></button></td>    
+</div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
 <% end %>

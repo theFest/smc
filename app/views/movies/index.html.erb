@@ -2,7 +2,7 @@
 
 <h1>Movies</h1>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
       <th>Title</th>
@@ -27,10 +27,10 @@
         <td><%= movie.rating %></td>
         <td><%= movie.description %></td>
         <td><%= movie.watched %></td>
-        <td><%= movie.user_id %></td>
-        <td><%= link_to 'Show', movie %></td>
-        <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
-        <td><%= link_to 'Destroy', movie, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><% movie.user_id %></td>
+        <td><button type="button" class="btn btn-info"><%= link_to 'Show', movie %></button></td>
+        <td><button type="button" class="btn btn-primary"><%= link_to 'Edit', edit_movie_path(movie) %></button></td>
+        <td><button type="button" class="btn btn-dark"><%= link_to 'Destroy', movie, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
       </tr>
       <% end %>
     <% end %>
@@ -39,4 +39,4 @@
 
 <br>
 
-<%= link_to 'New Movie', new_movie_path %>
+<button type="button" class="btn btn-success"><%= link_to 'Enter new movie to collection', new_movie_path %></button>
