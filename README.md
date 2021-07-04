@@ -7,7 +7,10 @@ rake db:migrate
 current smc workflow 
 * ## > document/readmap
 * ## CRUD { movies, watchlist }
-* ## Devise { implementing... }
+* ## Devise { implemented }
+* ## Search { implementing }
+* ## Bootstrapify { ... }
+* ## ... { ... }
 * ## Change db to postgres { current:sqlite }
 * ## Dockerize { docker-compose }
 * ## Build|Push to Heroku

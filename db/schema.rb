@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_29_143431) do
+ActiveRecord::Schema.define(version: 2021_06_29_224007) do
 
   create_table "movies", force: :cascade do |t|
     t.string "title"
@@ -22,6 +22,8 @@ ActiveRecord::Schema.define(version: 2021_06_29_143431) do
     t.boolean "watched"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_movies_on_user_id"
   end
 
   create_table "my_movie_collections", force: :cascade do |t|

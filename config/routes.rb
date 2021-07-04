@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'home/top10'
   get 'home/mostcollected'
   get 'home/personalwishlist'
+  get 'search', to:"movies#search"
   #get 'welcome/index' ## our default rouce for now.
   #resources :articles
   root 'welcome#index' ## reason, so we can have this route in root path.

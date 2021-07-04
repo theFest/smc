@@ -14,4 +14,8 @@ class HomeController < ApplicationController
   def personalwishlist
   end
 
+  def search
+    @movies = Movie.where("title LIKE ?", "%" +params[:q] + "%")
+  end
+
 end
