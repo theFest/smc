@@ -32,7 +32,11 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'devise', '~> 4.2'
 
 ## Bootstrap
-gem 'bootstrap', '~> 4.0'
+#gem 'bootstrap', '~> 4.0'
+
+gem 'faker'
+gem 'bootstrap', '~> 4.3.1'
+gem 'ransack'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

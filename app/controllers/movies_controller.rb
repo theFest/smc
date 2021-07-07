@@ -3,13 +3,11 @@ class MoviesController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   #before_action :correct_user, only: [:edit, :update, :destroy]
 
-  def search
-
-  end
 
   # GET /movies or /movies.json
   def index
-    @movies = Movie.all
+    @q = Movie.ransack(params[:q])
+    @movies = @q.result
   end
 
   # GET /movies/1 or /movies/1.json

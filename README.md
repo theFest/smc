@@ -1,4 +1,4 @@
-# SMC README 
+# SMovieCollector README 
 * ##############################
 bundle exec rake webpacker:install
 rake db:migrate
@@ -8,7 +8,7 @@ current smc workflow
 * ## > document/readmap
 * ## CRUD { movies, watchlist }
 * ## Devise { implemented }
-* ## Search { implementing }
+* ## Ransack { implemented }
 * ## Bootstrapify { ... }
 * ## ... { ... }
 * ## Change db to postgres { current:sqlite }

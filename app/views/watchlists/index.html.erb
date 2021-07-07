@@ -17,9 +17,9 @@
       <tr>
         <td><%= watchlist.movie %></td>
         <td><%= watchlist.added %></td>
-        <td><button type="button" class="btn btn-primary"><%= link_to 'Show', watchlist %></button></td>
-        <td><button type="button" class="btn btn-secondary"><%= link_to 'Edit', edit_watchlist_path(watchlist) %></button></td>
-        <td><button type="button" class="btn btn-danger"><%= link_to 'Destroy', watchlist, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
+        <td><%= link_to 'Show', watchlist, type:"button", class:"btn btn-primary" %></td>
+        <td><%= link_to 'Edit', edit_watchlist_path(watchlist), type:"button", class:"btn btn-secondary" %></td>
+        <td><%= link_to 'Destroy', watchlist, method: :delete, data: { confirm: 'Are you sure?' }, type:"button", class:"btn btn-danger" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -27,5 +27,4 @@
 </table>
 <br>
 
-<button type="button" class="btn btn-light"><%= link_to 'Enter new movie to watchlist', new_watchlist_path %>
-</button>
+<%= link_to 'Enter new movie to watchlist', new_watchlist_path, type:"button", class:"btn btn-success" %>
