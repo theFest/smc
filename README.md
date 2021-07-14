@@ -9,9 +9,9 @@ current smc workflow
 * ## CRUD { movies, watchlist }
 * ## Devise { implemented }
 * ## Ransack { implemented }
+* ## Change db to postgres(current:sqlite) { implemented }
 * ## Bootstrapify { ... }
 * ## ... { ... }
-* ## Change db to postgres { current:sqlite }
 * ## Dockerize { docker-compose }
 * ## Build|Push to Heroku
 * # Rake, Associations...
