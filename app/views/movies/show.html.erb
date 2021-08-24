@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <h1 class="display-4"><%= @movie.title %></h1>
@@ -38,7 +36,15 @@
   <%= @movie.watched %>
 </p>
 
-<button type="button" class="btn btn-primary"><%= link_to 'Edit', edit_movie_path(@movie) %></button>
-<button type="button" class="btn btn-warning"><%= link_to 'Back', movies_path %></button></p>
+<div class="image">
+    <div class="col">
+  <strong></strong>
+  <%= image_tag @movie.movie_image.variant(resize: "500x500"), class:"rounded", width:"500px", position:"absolute"; %>
+    </div>
+</div>
+</br>
+<td><%= link_to 'Edit', edit_movie_path(@movie), type:"button", class:"btn btn-success" %></td>
+<td><%= link_to 'Back', movies_path, type:"button", class:"btn btn-primary" %></td>
+
   </div>
 </div>

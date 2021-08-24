@@ -2,5 +2,5 @@
 
 <%= render 'form', movie: @movie %>
 
-<td><button type="button" class="btn btn-warning"><%= link_to 'Back', movies_path %></button></td>
-<td><button type="button" class="btn btn-info"><%= link_to 'Show', @movie %></button></td>
+<td><%= link_to 'Back', movies_path, type:"button", class:"btn btn-warning" %></td>
+<td><%= link_to 'Show', @movie, type:"button", class:"btn btn-info" %></td>

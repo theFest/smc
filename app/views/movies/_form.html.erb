@@ -17,47 +17,58 @@
 
   <div class="field form-group">
     <%= form.label :title %>
-    <%= form.text_field :title,
+    <%= form.text_field :title, autofocus: true, placeholder: "Movie title", :required => 'required',
       class:"form-control" %>
   </div>
 
   <div class="field form-group">
-    <%= form.label :year %>
-    <%= form.date_select :year,
+    <span class="datetime"><%= form.label :year %>
+    <%= form.date_select :year, placeholder: "Year", :required => 'required',
       class:"form-control" %>
+      <span/>
   </div>
 
   <div class="field form-group">
     <%= form.label :director %>
-    <%= form.text_field :director,
+    <%= form.text_field :director, autofocus: true, placeholder: "Movie director", :required => 'required',
       class:"form-control" %>
   </div>
 
   <div class="field form-group">
     <%= form.label :lenght %>
-    <%= form.text_field :lenght,
+    <%= form.text_field :lenght, autofocus: true, placeholder: "Movie lenght", :required => 'required',
       class:"form-control" %>
   </div>
 
   <div class="field form-group">
     <%= form.label :rating %>
-    <%= form.text_field :rating,
+    <%= form.text_field :rating, autofocus: true, placeholder: "Movie rating", :required => 'required',
       class:"form-control" %>
   </div>
 
   <div class="field form-group">
     <%= form.label :description %>
-    <%= form.text_area :description,
+    <%= form.text_area :description, autofocus: true, placeholder: "Movie description",
       class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-check form-switch">
     <%= form.label :watched %>
-    <%= form.check_box :watched %>
+    <%= form.check_box :watched, class:"form-check-input" %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :movie_image %>
+    <%= form.file_field :movie_image, class:"form-control", :required => 'required' %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :movie_image_uploads %>
+    <%= form.file_field :movie_image_uploads, multiple: true, class:"form-control" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class:'btn btn-success'%>
   </div>
 
 <% end %>

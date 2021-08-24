@@ -1,22 +1,26 @@
-# SMovieCollector README 
-* ##############################
-bundle exec rake webpacker:install
-rake db:migrate
+ [ Simple Movie Collector ] 
+ * README 
+
+"before start execute" 
+| bundle exec rake webpacker:install
+| rake db:migrate
 
 
 current smc workflow 
 * ## > document/readmap
-* ## CRUD { movies, watchlist }
-* ## Devise { implemented }
-* ## Ransack { implemented }
-* ## Change db to postgres(current:sqlite) { implemented }
-* ## Bootstrapify { ... }
-* ## ... { ... }
-* ## Dockerize { docker-compose }
-* ## Build|Push to Heroku
-* # Rake, Associations...
+* CRUD { movies, watchlist }
+* Devise { implemented }
+* Ransack { implemented }
+* Change db to postgres(current:sqlite) { implemented }
+* Image features { implemented }
+* Bootstrapify { ... }
+* tbd ... { ... }
+* Dockerize { docker-compose }
+* Build|Push to Heroku
+* Rake, Associations, Configurations, Services...
 This README would normally document whatever steps are necessary to get the
 application up and running.
+
 
 Things you may want to cover:
 * Ruby version
@@ -27,4 +31,4 @@ Things you may want to cover:
 * How to run the test suite
 * Services (job queues, cache servers, search engines, etc.)
 * Deployment instructions
-* ### define yours...
+* define yours...

@@ -26,6 +26,11 @@
 
     <div class="container">
         <br/>
+        <br/>
+        <% if notice %>
+          <%= render 'layouts/alerts' %>
+        <% end %>
+
     <%= yield %> <%## All our pages will reside here, kinda root partial. %>
     </div>
     <!-- Optional JavaScript; choose one of the two! -->

@@ -1,8 +1,7 @@
 class MoviesController < ApplicationController
   before_action :set_movie, only: %i[ show edit update destroy ]
-  before_action :authenticate_user!, except: [:index, :show]
+  before_action :authenticate_user! #, except: [:index :show]
   #before_action :correct_user, only: [:edit, :update, :destroy]
-
 
   # GET /movies or /movies.json
   def index
@@ -75,6 +74,6 @@ class MoviesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def movie_params
-      params.require(:movie).permit(:title, :year, :director, :lenght, :rating, :description, :watched, :user_id,)
+      params.require(:movie).permit(:title, :year, :director, :lenght, :rating, :description, :watched, :user_id, :movie_image, movie_image_uploads: [])
     end
 end
