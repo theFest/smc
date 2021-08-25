@@ -60,7 +60,8 @@ end
 
 group :production do
   # using for Heroku
-  gem 'pg', '~> 0.18.4'
+  #gem 'pg', '~> 0.18.4'
+  gem 'pg', '~> 1.1'
 end
 
 group :test do
