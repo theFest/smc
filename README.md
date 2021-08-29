@@ -1,5 +1,6 @@
  [ Simple Movie Collector ] 
  * README 
+ demo @ https://simple-movie-collector.herokuapp.com/
 
 "before start execute" 
 | bundle exec rake webpacker:install
@@ -13,10 +14,10 @@ current smc workflow
 * Ransack { implemented }
 * Change db to postgres(current:sqlite) { implemented }
 * Image features { implemented }
-* Bootstrapify { ... }
+* Bootstrapify { implemented }
+* Build|Push to Heroku { implemented }
 * tbd ... { ... }
 * Dockerize { docker-compose }
-* Build|Push to Heroku
 * Rake, Associations, Configurations, Services...
 This README would normally document whatever steps are necessary to get the
 application up and running.
