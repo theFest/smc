@@ -1,7 +1,7 @@
 class MoviesController < ApplicationController
   before_action :set_movie, only: %i[ show edit update destroy ]
   before_action :authenticate_user! #, except: [:index :show]
-  #before_action :correct_user, only: [:edit, :update, :destroy]
+  before_action :validate_correct_user, only: [:edit, :update, :destroy]
 
   # GET /movies or /movies.json
   def index
@@ -61,8 +61,8 @@ class MoviesController < ApplicationController
   end
 
   ### define persmissions for use
-  def correct_user
-    @movie = correct_user.movies.find.by(id: params[:id])
+  def validate_correct_user
+    @movie = current_user.movies.find_by(id: params[:id])
     redirect_to movies_path, notice: "Not authorized to edit this movie" if @movie.nil?
   end
 

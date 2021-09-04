@@ -19,7 +19,7 @@
 
 <div class="text">
     <%= form.label :added %>
-    <%= form.datetime_select :added,
+    <%= form.datetime_select :added, :start_year => 1800, :end_year => 2800,  
       class:"form-control" %>
 
 <div class="actions">

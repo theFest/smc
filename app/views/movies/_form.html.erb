@@ -23,7 +23,7 @@
 
   <div class="field form-group">
     <span class="datetime"><%= form.label :year %>
-    <%= form.date_select :year, placeholder: "Year", :required => 'required',
+    <%= form.date_select :year, :start_year => 1800, :end_year => 2800, placeholder: "Year", :required => 'required',
       class:"form-control" %>
       <span/>
   </div>
